@@ -10,7 +10,8 @@ $data=file_get_contents($name);
 
 $data=[
   'data'=>base64_encode($data),
-  'name'=>basename($name)
+  'name'=>basename($name),
+  'mime'=>"application/octet-stream"
 ];
 
 $data=json_encode($data);
